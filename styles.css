@@ -1,0 +1,76 @@
+/*Universal Selectors*/
+* {
+  color: purple;
+}
+
+/*Type Selectors select all elements of given element type*/
+div {
+  color: black;
+}
+
+h1 {
+  color: red;
+}
+/*Class Selectors-select all elements with the given class*/
+.alert-text {
+  color: blue;
+}
+/*ID Selectors*/
+/* note: do not use "id" attribute in styling css*/
+#title {
+  background-color: red;
+}
+/*Grouping Selectors -select two or more selectors to group*/
+.read,
+.unread {
+  color: blue;
+  background-color: yellow;
+}
+/*Chaining Selectors-*/
+.subsection.header {
+  color: red;
+}
+/* Descendant Combinator-*/
+.ancestor .contents {
+  color: red;
+}
+p {
+  /* hex - use "hex" code to define color as good practice because of the large availability of color*/
+  color: #1100ff;
+  /* rgb*/
+  color: rgb(100, 0, 127);
+  /* hsl*/
+  color: hsl(15, 82%, 56%);
+  /* Font style*/
+  font-family: Arial, Helvetica, sans-serif;
+  /* Text size*/
+  font-size: 14px;
+  /* Font Weight*/
+  font-weight: bolder;
+  background-color: grey;
+  /* Alignment*/
+  text-align: justify;
+}
+/* image*/
+img {
+  height: auto;
+  width: 100px;
+  background-color: violet;
+}
+/* specificity- first is id, second is type third is class*/
+h2 {
+  color: red;
+}
+
+.title-heading {
+  color: #1100ff;
+}
+#title {
+  color: pink;
+}
+#parent {
+  color: red;
+  font-size: 12px;
+}
+/* 1. external css*/
+/* 2. internal css*/
